@@ -1,0 +1,45 @@
+.dropDownCon {
+    width: 200px;
+    position: relative;
+    .dropDown {
+        width: 100%;
+        padding: 17px 14px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        font-size: 15px;
+        cursor: pointer;
+        p {
+            letter-spacing: 0.5px;
+        }
+        button{
+            border: none;
+            outline: none;
+            background: transparent;
+            cursor: pointer;
+        }
+    }
+    .drop {
+        padding: 10px 14px;
+        position: absolute;
+        top: 4rem;
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        background-color: #fff;
+        p{
+            cursor: pointer;
+        }
+    }
+}
+.showDropDown {
+    display: none;
+}
+.dark {
+    .drop{
+        background-color: hsl(209deg, 23%, 22%) !important;
+    }
+}

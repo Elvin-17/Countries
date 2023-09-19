@@ -1,0 +1,35 @@
+.toggle_container{
+    display: flex;
+    align-items: center;
+    .toggle {
+        background-color: #444;
+        border-radius: 30px;
+        width: 90px;
+        height: 50px;
+        position: relative;
+        transition: 0.5s;
+        .toggle_button {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            top: 5px;
+            left: 5px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+    }
+    .toggle.active{
+        background-color: aqua;
+    }
+    .toggle.active{
+        .toggle_button{
+            left: 45px;
+        }
+    }
+    .text{
+        font-size: 25px;
+        margin-left: 10px;
+    }
+}
